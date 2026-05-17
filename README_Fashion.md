@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Problem Description
+## Problem Description
 
 Fashion-MNIST is a benchmark dataset of grayscale clothing images designed as a drop-in replacement for the original MNIST digits dataset. This project builds and trains a **Multi-Layer Perceptron (MLP)** to classify 10 types of clothing items.
 
@@ -15,7 +15,7 @@ Two experiments are conducted to compare the effect of different activation func
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Name:** Fashion-MNIST
 - **Source:** Built into Keras — `tensorflow.keras.datasets.fashion_mnist`
@@ -40,7 +40,7 @@ Two experiments are conducted to compare the effect of different activation func
 
 ---
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 ```
 Input (784,)  ← 28×28 image flattened into a 1D vector
@@ -50,14 +50,14 @@ Input (784,)  ← 28×28 image flattened into a 1D vector
 ```
 
 **Preprocessing applied:**
-- ✅ **Normalisation** — pixel values scaled from [0, 255] to [0.0, 1.0]
-- ✅ **Flattening** — 28×28 images reshaped to 784-length vectors
-- ✅ **One-hot encoding** — integer labels converted to categorical vectors
-- ✅ **Data quality check** — NaN verification and label distribution inspection
+-  **Normalisation** — pixel values scaled from [0, 255] to [0.0, 1.0]
+-  **Flattening** — 28×28 images reshaped to 784-length vectors
+-  **One-hot encoding** — integer labels converted to categorical vectors
+-  **Data quality check** — NaN verification and label distribution inspection
 
 ---
 
-## 🧪 Experiments
+## Experiments
 
 | | Model A | Model B |
 |---|---|---|
@@ -72,16 +72,15 @@ Input (784,)  ← 28×28 image flattened into a 1D vector
 
 ---
 
-## 📊 Results
+## Results
 
 | Model | Accuracy | Loss |
 |---|---|---|
-| Model A — ReLU | XX.XX% | X.XXXX |
-| Model B — Sigmoid | XX.XX% | X.XXXX |
+| Model A — ReLU | 0.8835% | 0.3383 |
+| Model B — Sigmoid | 0.8867% | 0.3154 |
 
-> **Best model:** <!-- fill after training -->  
-> **Difference:** <!-- e.g. "Model A outperformed Model B by 2.3%" -->
-
+> **Best model:** Model B (Sigmoid)
+> **Difference:** Model B outperformed Model A by 0.32%
 ---
 
 ## 📈 Visualisations
@@ -96,7 +95,7 @@ All plots are saved automatically to Google Drive under `fashion_mnist_project/r
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Clone the repository
 ```bash
@@ -141,7 +140,7 @@ IMAGE_PATH = '/content/your_image.jpg'
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 fashion-mnist-classification/
